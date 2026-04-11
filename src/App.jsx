@@ -1,5 +1,6 @@
-import { Heading } from "lucide-react"
+import Heading from "./components/Heading"
 import Navbar from "./components/Navbar"
+import Orders from "./components/Orders"
 
 
 function App() {
@@ -11,7 +12,11 @@ function App() {
     </header>
 
     <section>
-      <Heading></Heading>
+      <Heading>Kitchen Room</Heading>
+    </section>
+
+    <section>
+      <Orders></Orders>
     </section>
     </>
   )
