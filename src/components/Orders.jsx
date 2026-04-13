@@ -15,23 +15,23 @@ const Orders = () => {
                 </div>
             </div>
 
-            {/* Current Orders */}
+            {/* Currently Cooking */}
             <div className="border-4 border-dotted rounded-2xl border-amber-400 p-5">
                 <div className="flex flex-col lg:flex-row items-center justify-between">
                     <CookingPot className="animate-pulse" color="#fcb700" size={100}/>
                     <div className="text-xl text-center">
-                        Current Orders
+                        Currently Cooking
                         <h2 className="text-6xl font-bold">{0}</h2>
                     </div>
                 </div>
             </div>
 
-            {/* Current Orders */}
+            {/* Ready to Serve  */}
             <div className="border-4 border-dotted rounded-2xl border-amber-400 p-5">
                 <div className="flex flex-col lg:flex-row items-center justify-between">
                     <BookmarkCheck className="animate-pulse" color="#fcb700" size={100}/>
                     <div className="text-xl text-center">
-                        Current Orders
+                        Ready to Serve
                         <h2 className="text-6xl font-bold">{0}</h2>
                     </div>
                 </div>
