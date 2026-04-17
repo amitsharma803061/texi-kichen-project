@@ -3,6 +3,7 @@ import Heading from "./components/Heading"
 import Navbar from "./components/Navbar"
 import OrdersJson from "./components/OrdersJson";
 import { ToastContainer } from "react-toastify";
+import LastCard from "./components/LastCard";
 
 const loadOrders = () => fetch("/orders.json")
   .then((res) => res.json())
@@ -37,6 +38,8 @@ function App() {
         pauseOnHover
         theme="colored"
       />
+
+      <LastCard></LastCard>
     </>
   )
 }
