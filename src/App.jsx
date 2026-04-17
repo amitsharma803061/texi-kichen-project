@@ -2,6 +2,7 @@ import { Suspense } from "react";
 import Heading from "./components/Heading"
 import Navbar from "./components/Navbar"
 import OrdersJson from "./components/OrdersJson";
+import { ToastContainer } from "react-toastify";
 
 const loadOrders = () => fetch("/orders.json")
   .then((res) => res.json())
@@ -23,6 +24,19 @@ function App() {
           <OrdersJson promise={ordersPromise}></OrdersJson>
         </Suspense>
       </section>
+
+      <ToastContainer
+        position="top-center"
+        autoClose={5000}
+        hideProgressBar={false}
+        newestOnTop={false}
+        closeOnClick={false}
+        rtl={false}
+        pauseOnFocusLoss
+        draggable
+        pauseOnHover
+        theme="colored"
+      />
     </>
   )
 }
